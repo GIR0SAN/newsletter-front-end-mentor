@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Newsletter sign-up </title>
+</head>
+<body>
+  
+  <header class="l-header">
+    <div class="l-container">
+      <div class="l-content__wrapper">
+        <div class="l-text__wrapper">
+          <h1 class="c-h1">Stay updated!</h1>
+          <p class="c-paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="l-list__wrapper">
+            <div class="l-list">
+              <img class="c-list__image" src="assets/images/icon-list.svg" alt="Decorative">
+              <p class="c-list__text">Product discovery and building what matters
+              </p>
+            </div>
+            <div class="l-list">
+              <img class="c-list__image" src="assets/images/icon-list.svg" alt="Decorative">
+              <p class="c-list__text">Measuring to ensure updates are a success
+              </p>
+            </div>
+            <div class="l-list">
+              <img class="c-list__image" src="assets/images/icon-list.svg" alt="Decorative">
+              <p class="c-list__text">And much more!
+              </p>
+          </div>  
+        </div>
+        
+        
+          <form id="form">
+            <div class="l-text__email">
+              <p>E-mail Adress</p>
+              <span class="c-span__required">Valid e-mail required.</span>
+            </div>
+            <input type="email" placeholder="email@company.com" class="c-email__button  required" oninput="emailValidate()">
+          </form>
+          
+        
+          <div ><p><input class="c-subscribe__button"  type="button" value="Subscribe to monthly newsletter" id="button">
+          </p></div>
+
+        </div>
+        
+          <picture>
+            <source media="(max-width: 480px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+            <img src="assets/images/illustration-sign-up-desktop.svg" alt="decorative" class="c-image">
+          </picture>
+              
+      </div>
+    </div>
+  </header>
+
+  <div class="l-popup__wrapper">
+    <div class="l-popup">
+      <img src="assets/images/icon-success.svg" alt="Decorative">
+    
+      <h1 class="c-h1__modal">
+        Thanks For <br>subscribe!
+      </h1>
+      <p class="c-paragraph__modal">
+        A confirmation email has been sent to <strong>ash@loremcompany.com</strong>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <div >
+        <p><input class="c-subscribe__button" id="closeButton" type="button" value="Dismiss message">
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="scrypt.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
+<!--
+
+
+ Sign-up form end 
+
+ Success message start 
+
+Thanks for subscribing!
+
+
+Dismiss message
+
+Success message end
+
+
+
+
+-->
